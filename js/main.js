@@ -31,7 +31,7 @@ function geocode(address) {
         console.log(error);
         return "";
       });
-  }
+}
 
 document.addEventListener("DOMContentLoaded", function() {
     button = document.getElementById("submit-button");
@@ -45,8 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log(result);
             console.log(result[0].address.coordinate.lat +
                 " / " +
-                result[0].address.coordinate.lon)
-            
+                result[0].address.coordinate.lon)    
         })
         .catch((error) => {
             console.log(error);
@@ -59,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
     options.setSize(new IWSize(1000, 600));
 
     // Define a new coordinate object and set it as center
+    // ---- This needs to be updated to the coordinates from to event in line 43 ----
     var coordinate = new IWCoordinate(7.1408879, 50.70150837, IWCoordinate.WGS84);
 
     map.setCenter(coordinate);
