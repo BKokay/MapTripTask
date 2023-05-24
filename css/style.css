@@ -1,0 +1,26 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    padding: 20px 0 10px 0;
+}
+
+input {
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.map {
+    background-color: #dddddd;
+    height: 100%;
+    width: 100%;
+}
